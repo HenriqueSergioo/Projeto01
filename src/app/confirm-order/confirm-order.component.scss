@@ -1,0 +1,83 @@
+/* Estilos gerais */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo img {
+  max-width: 150px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.confirmacao-container {
+  background-color: white;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.pedido-info p,
+.endereco-info p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.acao {
+  margin-top: 20px;
+}
+
+.acao button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.acao button:hover {
+  background-color: #333333;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #777;
+}

@@ -1,0 +1,163 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 150px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  text-align: left;
+  display: flex;
+  gap: 15px;
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-content h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+.text-content p {
+  color: #666;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.text-content .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.logo{
+  text-align: left;
+}
+
+#carrinho {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: 1px solid #ddd; /* Borda mais suave */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordas arredondadas */
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 350px; /* Largura um pouco maior */
+}
+
+#carrinho h2 {
+  margin-top: 0; /* Remove a margem superior padrão do h2 */
+  margin-bottom: 15px; /* Adiciona margem inferior */
+  color: #333; /* Cor do título mais escura */
+  border-bottom: 1px solid #eee; /* Linha abaixo do título */
+  padding-bottom: 10px; /* Espaçamento entre o título e a linha */
+}
+
+#carrinho ul {
+  list-style: none;
+  padding: 0;
+}
+
+.item-carrinho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; /* Mais espaço entre os itens */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2; /* Linha separando os itens */
+}
+.item-carrinho:last-child {
+  border-bottom: none; /* Remove a borda do último item */
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.quantidade {
+  display: flex;
+  align-items: center;
+}
+
+.quantidade button {
+  margin: 0 8px; /* Mais espaço entre os botões */
+  padding: 5px 10px; /* Botões maiores */
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 4px; /* Bordas arredondadas nos botões */
+  background-color: #eee; /* Cor de fundo dos botões */
+  transition: background-color 0.3s; /* Transição suave na cor de fundo */
+}
+.quantidade button:hover {
+  background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+.quantidade span {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.remover-item {
+  cursor: pointer;
+  color: #c0392b; /* Vermelho mais suave */
+  margin-left: 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.remover-item:hover {
+  color: #e74c3c;
+}
+
+#total {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 20px; /* Espaçamento acima do total */
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}

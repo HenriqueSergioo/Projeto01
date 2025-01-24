@@ -1,0 +1,49 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff; /* Fundo preto */
+  font-family: 'Poppins', sans-serif;
+  color: #fff; /* Texto branco */
+}
+
+/* Container principal */
+.container {
+  text-align: center;
+}
+
+/* Estilo da logo */
+.logo-img {
+  width: 150px; /* Ajuste o tamanho conforme necessário */
+  margin-bottom: 20px;
+}
+
+/* Texto de boas-vindas */
+.welcome-text {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+/* Estilo do botão */
+.welcome-button {
+  background-color: #fff; /* Fundo branco */
+  color: #000; /* Texto preto */
+  padding: 15px 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.welcome-button:hover {
+  background-color: #000; /* Fundo preto ao passar o mouse */
+  color: #fff; /* Texto branco ao passar o mouse */
+  border: 1px solid #fff;
+}

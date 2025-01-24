@@ -1,0 +1,117 @@
+
+
+  <header>
+      <div class="interface">
+          <div class="logo">
+              <a href="#">
+                 <img src="../../assets/logo.jpg" alt="Logo Pizzaria" width="200px">
+              </a>
+          </div><!--logotipo-->
+          <nav class="menu-desktop">
+              <ul>
+                  <li><a routerLink="/login">Entrar</a></li>
+                  <li><a target="_blank" href="https://wa.me/5511960713016">Contate-nos</a></li>
+                  <li><a routerLink="/about">Sobre nós</a></li>
+              </ul>
+          </nav>
+          <div class="btn-cardapio">
+            <button type="button" (click)="onCardapioClick()">Cardápio</button>
+          </div>
+
+      </div> <!--interface-->
+
+  </header>
+  <hr>
+  <main>
+      <section class="topo-do-site">
+          <div class="interface2">
+             <div class="flex">
+              <div class="txt-topo-site">
+                  <div class="texto-titulo">
+                      <h1>Faça seu pedido e entre nesse flow com a gente<span>!</span></h1>
+                      <p>O encontro perfeito entre, Pizzas artesanais, e momentos felizes. <br> Seja bem-vindo entre nesse fluxo de sabores, sente a vibe deliciosa <br> que é saborear as nossas pizzas!
+                      </p>
+                      </div>
+                      <div class="form">
+                        <form (ngSubmit)="onCardapioClick()" #form="ngForm">
+                          <div class="input-group">
+                            <div class="input-box">
+                              <h1>Cadastre-se</h1>
+                              <label for="cpf">CPF</label>
+                              <input id="cpf" [(ngModel)]="cpf" name="cpf" type="text" placeholder="Digite seu CPF" required>
+                            </div>
+                            <div class="input-box">
+                              <label for="email">E-mail</label>
+                              <input id="email" [(ngModel)]="email" name="email" type="text" placeholder="Digite seu email" required>
+                            </div>
+                            <div class="input-box">
+                              <label for="address">Endereço</label>
+                              <input id="address" [(ngModel)]="address" name="address" type="text" placeholder="Digite seu endereço" required>
+                            </div>
+                            <div class="input-box">
+                              <label for="number">Celular</label>
+                              <input id="number" [(ngModel)]="number" name="number" type="tel" placeholder="(xx) xxxx-xxxx" required>
+                            </div>
+                            <div class="input-box">
+                              <label for="password">Senha</label>
+                              <input id="password" [(ngModel)]="password" name="password" type="password" placeholder="Crie sua Senha" required>
+                            </div>
+                          </div>
+                          <div class="login-button">
+                            <button type="submit">Cadastrar</button>
+                          </div>
+                        </form>
+                      </div>
+              </div> <!--txt-topo-site-->
+              <div class="img-topo-site">
+                  <img src="../../assets/pizza-animade.webp" alt="pizzaflutuante" width="300">
+              </div>
+             </div>
+
+
+
+          </div> <!--interface-->
+      </section> <!--topo-do-site-->
+  </main>
+
+  <footer class="rodape" id="contato">
+      <div class="rodape-div">
+
+          <div class="rodape-div-1">
+              <div class="rodape-div-1-coluna">
+
+                  <span><b>Endereço</b></span>
+                  <p>SIA Trecho 5 lote 000 bloco z sala 900 - Guará, Brasília - DF, 70000-010</p>
+              </div>
+          </div>
+
+          <div class="rodape-div-2">
+              <div class="rodape-div-2-coluna">
+
+                  <span><b>Contatos</b></span>
+                  <p>+55 11 96071-3016</p>
+              </div>
+          </div>
+
+          <div class="rodape-div-3">
+              <div class="rodape-div-3-coluna">
+
+                  <span><b>Links</b></span>
+                  <p><a target="_blank" href="https://www.instagram.com/pizzarialanostracasa1996/">instagram</a></p>
+                  <p><a href="sobrenos.html">Sobre</a></p>
+              </div>
+          </div>
+
+          <div class="rodape-div-4">
+              <div class="rodape-div-4-coluna">
+
+                  <span><b>Outros</b></span>
+                  <p>Políticas de Privacidade</p>
+              </div>
+          </div>
+
+      </div>
+      <p class="rodape-direitos">Copyright © 2025 – Todos os Direitos Reservados a Henrique Sérgio.</p>
+  </footer>
+
+

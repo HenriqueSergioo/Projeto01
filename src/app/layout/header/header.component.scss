@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ESTILO CABEÇARIO */
+
+header{
+  padding: 40px 4% ;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover{
+  color: rgb(0, 0, 0);
+  transform: scale(1.15);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .btn-cardapio button {
+  color: white;
+  padding: 10px 40px;
+  font-size: 13px;
+  font-weight: 500px;
+  background-color: rgb(6, 6, 6);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+header .btn-cardapio button:hover {
+  box-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
