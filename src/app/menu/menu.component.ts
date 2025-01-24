@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
   produtos = [
-    { nome: 'Pizza Chocolate & Morango', preco: 55.9, imagem: '../../assets/pizza1.jpg' },
-    { nome: 'Pizza de Rúcula', preco: 50.9, imagem: '../../assets/pizza2.jpg' },
-    { nome: 'Pizza de Queijo', preco: 52.9, imagem: '../../assets/pizza3.jpg' },
-    { nome: 'Pizza Portuguesa', preco: 52.9, imagem: '../../assets/pizza4.jpg' },
-    { nome: 'Pizza de Atum', preco: 56.99, imagem: '../../assets/pizza5.jpg' },
-    { nome: 'Arroz Doce', preco: 56.99, imagem: '../../assets/pizza6.jpg' }
+    { nome: 'Cooler Branco', preco: 300.9, imagem: '../../assets/coolerbranco.svg.svg' },
+    { nome: 'Cooler Preto', preco: 400.9, imagem: '../../assets/coolerpreto.svg.svg' },
+    { nome: 'gabinete Branco', preco: 52.9, imagem: '../../assets/gabinetebranco.svg.svg' },
+    { nome: 'gabinete Preto', preco: 52.9, imagem: '../../assets/gabinetepreto.svg.svg' },
+    { nome: '', preco: 56.99, imagem: '' },
+    { nome: '', preco: 56.99, imagem: '' }
   ];
 
   carrinho: { nome: string; preco: number; quantidade: number }[] = [];
