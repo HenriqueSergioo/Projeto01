@@ -8,11 +8,10 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  cpf: string = '';
+
   email: string = '';
-  address: string = '';
-  number: string = '';
   password: string = ''; // Certifique-se de que esta propriedade está declarada
+  User: any = '';
 
   // Injeta o Router no construtor
   constructor(private router: Router) {}
@@ -23,11 +22,11 @@ export class HomeComponent implements OnInit {
 
   onCardapioClick(): void {
     console.log('Botão clicado!');
-    if (!this.cpf || !this.email || !this.address || !this.number || !this.password) {
+    if (!this.email || !this.User || !this.password) {
       alert('Por favor, preencha todos os campos antes de acessar o cardápio.');
     } else {
-      alert('Acesso liberado! Redirecionando para o cardápio...');
-      this.router.navigate(['/menu']); // Redireciona para a página de cardápio
+      alert('Acesso liberado! Redirecionando para a pagina de login...');
+      this.router.navigate(['/login']); // Redireciona para a página de cardápio
     }
   }
 }

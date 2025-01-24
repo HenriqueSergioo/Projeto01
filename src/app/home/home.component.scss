@@ -5,14 +5,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
   background-color: rgb(255, 255, 255);
   height: 100vh;
+  display: flex; /* Centraliza conteúdo com Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
 }
-
 
 .interface {
   max-width: 1280px;
@@ -22,7 +24,7 @@ body {
 /* ESTILO CABEÇARIO */
 
 header{
-  padding: 40px 4% ;
+  padding: 40px 4%;
 }
 
 header > .interface {
@@ -79,47 +81,38 @@ section.topo-do-site {
 }
 
 .topo-do-site .img-topo-site img{
-
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
-
 }
- .img-topo-site img:hover {
+
+.img-topo-site img:hover {
   color: black;
-
 }
-
-
 
 /* TELA DE CADASTRO */
 
-/* TELA DE CADASTRO */
 .form {
-  padding: 30px 5%; /* Diminui o padding superior e inferior para que o formulário fique mais compacto */
-  margin-top: -40px; /* Faz o formulário se mover um pouco para cima */
-}
-
-.flex {
-  display: inline-block;
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: space-between;
-  width: 100%;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-h1 {
-  margin-bottom: 10px;
-}
-
-
-.form {
-  flex: 1 1 45%; /* Ocupa um pouco menos da metade, deixando espaço para margens/padding */
-  margin-left: auto; /* Empurra o formulário para a direita */
-  height:auto;
-  float: right;
-  background-color: #fff; /* Adiciona um fundo branco para o formulário */
+  padding: 30px 20px; /* Adicionado maior espaçamento interno */
+  background-color: #f2f2f2; /* Fundo branco para destaque */
   border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Adiciona sombra suave */
+  width: 100%;
+  max-width: 400px; /* Define uma largura máxima para o formulário */
+  margin: 0 auto; /* Centraliza horizontalmente o formulário */
+}
+
+.form input, .form textarea, .form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px; /* Espaçamento entre os campos */
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+h1 {
+  margin-bottom: 20px; /* Maior espaçamento abaixo do título */
+  text-align: center; /* Centraliza o título */
 }
 
 .texto-e-titulo {
@@ -129,61 +122,22 @@ h1 {
 /* Ajuste no botão do formulário */
 section .login-button button {
   color: white;
-  width: auto;
+  width: 100%;
+  border-color: rgb(0, 140, 222);
   border-radius: 30px;
   padding: 12px 30px; /* Aumenta o padding para maior conforto */
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 140, 222);
   margin-top: 15px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .login-button button:hover {
-  box-shadow: 0px 0px 8px rgb(0, 0, 0);
+  box-shadow: 0px 0px 8px rgb(0, 140, 222);
   transform: scale(1.05);
+  animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-/* RODAPE DO SITE */
-
-.rodape{
-  background-color: #000000;
-  color: white;
-  height: auto;
-  width: 100%;
-  font-size: 14px;
-  font-family: poppins, sans-serif;
-  margin-top: 90px;
-}
-.rodape a{
-  text-decoration: none;
-  color: white;
-}
-.rodape p{
-  margin-bottom: 15px;
-}
-.rodape-div{
-  display: flex;
-  flex-wrap: wrap;
-  width:100%;
-  margin: auto;
-  align-items: stretch;
-  padding: 60px 10px 40px 10px;
-}
-.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
-  display: flex;
-  width: calc(100% / 4 - 20px);
-  padding: 10px;
-}
-.rodape span{
-  font-size: 20px;
-  color: white;
-}
-.rodape-direitos{
-  width: calc(100% - 20px);
-  background-color: black;
-  padding: 10px;
-  margin: 0px;
-  text-align: center;
-}
 /*mobile*/
 @media (max-width: 768px) {
   .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
@@ -194,7 +148,6 @@ section .login-button button {
       padding: 60px 0px 40px 0px;
   }
 }
-
 
 /* Estilos para o corpo e a estrutura geral */
 
