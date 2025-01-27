@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -9,10 +10,10 @@ export class MenuComponent {
   produtos = [
     { nome: 'Cooler Branco', preco: 300.9, imagem: '../../assets/coolerbranco.svg.svg' },
     { nome: 'Cooler Preto', preco: 400.9, imagem: '../../assets/coolerpreto.svg.svg' },
-    { nome: 'gabinete Branco', preco: 52.9, imagem: '../../assets/gabinetebranco.svg.svg' },
+    { nome: 'gabinete Branco', preco: 52.9, imagem: '../../assets/PHOTO-2025-01-27-15-20-00' },
     { nome: 'gabinete Preto', preco: 52.9, imagem: '../../assets/gabinetepreto.svg.svg' },
-    { nome: '', preco: 56.99, imagem: '' },
-    { nome: '', preco: 56.99, imagem: '' }
+    { nome: 'placa de video', preco: 56.99, imagem: '../../assets/hd2tb.svg.svg' },
+    { nome: 'inteli7', preco: 56.99, imagem: '../../assets/inteli7.svg.svg' }
   ];
 
   carrinho: { nome: string; preco: number; quantidade: number }[] = [];
