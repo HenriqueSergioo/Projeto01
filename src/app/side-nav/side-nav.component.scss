@@ -1,11 +1,33 @@
 /* Barra lateral fixa */
+
+* {
+  font-family: 'Poppins', sans-serif;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .side-nav {
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
   width: 160px;
-  background: linear-gradient(180deg, #007bff, #0056b3); /* Gradiente de azul */
+  background: linear-gradient(180deg, #007bff, #020d19); /* Gradiente de azul */
   color: white;
   box-shadow: 1px 0 4px rgba(0, 0, 0, 0.1); /* Leve sombra para um efeito de profundidade */
   padding: 20px 10px; /* Aumentei o padding para melhorar o espaço interno */
