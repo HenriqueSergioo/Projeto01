@@ -14,8 +14,8 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { HardwaresComponent } from './pages/hardwares/hardwares.component';
 import { BudgetComponent } from './pages/budget/budget.component';
 import { BuildpcComponent } from './pages/buildpc/buildpc.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 
 
@@ -34,8 +34,7 @@ import { FormsModule } from '@angular/forms';
     HardwaresComponent,
     BudgetComponent,
     BuildpcComponent,
-    NavBarComponent,
-
+    SideNavComponent,
   ],
 
   imports: [
