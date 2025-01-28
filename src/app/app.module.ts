@@ -11,13 +11,11 @@ import { ConfirmPaymentComponent } from './confirm-payment/confirm-payment.compo
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
-import { FormsModule } from '@angular/forms';
 import { HardwaresComponent } from './pages/hardwares/hardwares.component';
 import { BudgetComponent } from './pages/budget/budget.component';
 import { BuildpcComponent } from './pages/buildpc/buildpc.component';
-
-
-
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +25,7 @@ import { BuildpcComponent } from './pages/buildpc/buildpc.component';
     AppComponent,
     HomeComponent,
     AboutComponent,
-MenuComponent,
+    MenuComponent,
     ConfirmPaymentComponent,
     ConfirmOrderComponent,
     LoginComponent,
@@ -36,14 +34,16 @@ MenuComponent,
     HardwaresComponent,
     BudgetComponent,
     BuildpcComponent,
+    NavBarComponent,
+    
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
-  providers: [
+ providers: [
     provideClientHydration()
   ],
   bootstrap: [AppComponent]
