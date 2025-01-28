@@ -25,7 +25,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    MenuComponent,
+     MenuComponent,
     ConfirmPaymentComponent,
     ConfirmOrderComponent,
     LoginComponent,
@@ -35,7 +35,7 @@ import { FormsModule } from '@angular/forms';
     BudgetComponent,
     BuildpcComponent,
     NavBarComponent,
-    
+
   ],
 
   imports: [
