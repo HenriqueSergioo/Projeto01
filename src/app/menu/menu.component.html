@@ -1,24 +1,35 @@
-<body>
-  <header>
+<header>
+  <div class="header-content">
     <div class="logo">
+<<<<<<< HEAD
       <img src="../../assets/logopchouse2-removebg-preview.png" alt="Logo empresa">
+=======
+      <img src="../../assets/logo.jpg" alt="Logo da Loja de Hardware">
+>>>>>>> origin/devHenrique
     </div>
-  </header>
+    <button class="cart-icon" (click)="toggleCarrinho()">
+      <i class="fas fa-shopping-cart"></i>
+      <span *ngIf="carrinho.length > 0" class="cart-badge">{{ carrinho.length }}</span>
+    </button>
+  </div>
+</header>
 
-  <main>
-    <h1>Cardápio:</h1>
-    <div class="menu">
-      <div *ngFor="let produto of produtos" class="card">
-        <img [src]="produto.imagem" [alt]="produto.nome">
-        <div class="text-content">
-          <h2>{{ produto.nome }}</h2>
-          <p class="price">R$ {{ produto.preco | number: '1.2-2' }}</p>
-          <button (click)="adicionarAoCarrinho(produto)">Adicionar ao Carrinho</button>
-        </div>
+<main>
+  <h1>Catálogo de Produtos:</h1>
+  <div class="menu">
+    <div *ngFor="let produto of produtos" class="card">
+      <img [src]="produto.imagem" [alt]="produto.nome">
+      <div class="text-content">
+        <h2>{{ produto.nome }}</h2>
+        <p class="price">R$ {{ produto.preco | number: '1.2-2' }}</p>
+        <button (click)="adicionarAoCarrinho(produto)">Adicionar ao Carrinho</button>
       </div>
     </div>
+  </div>
 
-    <div id="carrinho">
+
+  <div class="carrinho-modal" *ngIf="carrinhoAberto">
+    <div class="carrinho-content">
       <h2>Carrinho de Compras</h2>
       <ul>
         <li *ngFor="let item of carrinho" class="item-carrinho">
@@ -33,6 +44,7 @@
       </ul>
       <p id="total">Total: R$ {{ calcularTotal() | number: '1.2-2' }}</p>
       <button [disabled]="carrinho.length === 0" routerLink="/confirm-payment">Confirmar pedido</button>
+      <button class="close-modal" (click)="toggleCarrinho()">Fechar</button>
     </div>
-  </main>
-</body>
+  </div>
+</main>
