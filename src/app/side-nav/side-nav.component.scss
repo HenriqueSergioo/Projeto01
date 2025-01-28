@@ -1,34 +1,62 @@
+/* Barra lateral fixa */
 .side-nav {
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
-  width: 250px;
-  background: linear-gradient(180deg, #007BFF, #0056b3);
+  width: 160px;
+  background: linear-gradient(180deg, #007bff, #0056b3); /* Gradiente de azul */
   color: white;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.1); /* Leve sombra para um efeito de profundidade */
+  padding: 20px 10px; /* Aumentei o padding para melhorar o espaço interno */
+  z-index: 800; /* Garante que a barra lateral fique sempre visível */
+  transition: transform 5s ease; /* Transição suave para animação (se for usado com toggle) */
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
+/* Estilo para a lista de links */
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
 
-    li {
-      margin: 15px 0;
+.side-nav li {
+  margin-bottom: 20px; /* Aumentei o espaço entre os itens */
+}
 
-      a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 500;
-        display: block;
-        padding: 10px;
-        border-radius: 5px;
+.side-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  padding: 12px 15px; /* Aumentei o padding para melhorar a área de clique */
+  border-radius: 8px; /* Deixei os cantos mais arredondados */
+  transition: background-color 0.3s ease, padding-left 0.2s ease; /* Animação suave para hover */
+}
 
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.2);
-        }
-      }
-    }
+/* Efeito de hover */
+.side-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo mais suave ao passar o mouse */
+  padding-left: 20px; /* Aumenta o espaço à esquerda para um efeito de "deslizamento" */
+}
+
+/* Adicionando o efeito de ícone ou logo na parte superior */
+.side-nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px; /* Espaçamento maior antes dos itens do menu */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .side-nav {
+    width: 200px; /* Reduz a largura em dispositivos menores */
+    padding: 20px; /* Menos padding para aproveitar o espaço */
+  }
+
+  .side-nav a {
+    font-size: 16px; /* Menor tamanho de fonte em dispositivos menores */
+    padding: 10px 15px; /* Menos padding para otimizar o uso de espaço */
   }
 }
