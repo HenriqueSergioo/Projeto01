@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class MenuComponent {
   produtos = [
 
-    { nome: 'Placa de Vídeo GTX 3060', preco: 2899.99, imagem: '../../assets/placa-de-video.jpg' },
+    { nome: 'Placa-de-Vídeo GTX 3060', preco: 2899.99, imagem: '../../assets/placa-de-video.jpg' },
     { nome: 'Processador Intel i7', preco: 1899.99, imagem: '../../assets/processador.jpg' },
     { nome: 'Memória RAM 16GB', preco: 699.99, imagem: '../../assets/ram.jpg' },
     { nome: 'SSD 512GB', preco: 399.99, imagem: '../../assets/ssd.jpg' },
@@ -22,14 +22,14 @@ export class MenuComponent {
     { nome: 'gabinete Branco', preco: 52.9, imagem: '../../assets/PHOTO-2025-01-27-15-20-00' },
     { nome: 'gabinete Preto', preco: 52.9, imagem: '../../assets/gabinetepreto.svg.svg' },
     { nome: 'placa de video', preco: 56.99, imagem: '../../assets/hd2tb.svg.svg' },
-    { nome: 'inteli7', preco: 56.99, imagem: '../../assets/inteli7.svg.svg' }
+    { nome: 'inteli7', preco: 56.99, imagem: '../../assets/inteli7.svg.svg' },
     { nome: 'placa de video', preco: 56.99, imagem: '../../assets/hd2tb.svg.svg' },
-    { nome: 'memoriaRam1', preco: 56.99, imagem: '../../assets/memoriaram1.svg.svg' }
+    { nome: 'memoriaRam1', preco: 56.99, imagem: '../../assets/memoriaram1.svg.svg' },
     { nome: 'memoriaRam2', preco: 56.99, imagem: '../../assets/memoriaram2.svg.svg' },
     { nome: 'placa de video', preco: 56.99, imagem: '../../assets/hd2tb.svg.svg' },
-    { nome: 'inteli7', preco: 56.99, imagem: '../../assets/inteli7.svg.svg' }
+    { nome: 'inteli7', preco: 56.99, imagem: '../../assets/inteli7.svg.svg' },
     { nome: 'placa mae', preco: 56.99, imagem: '../../assets/placamaeasusz90.svg.svg' },
-    { nome: 'placa mae modelo 2', preco: 56.99, imagem: '../../assets/placamaez80.svg.svg' }
+    { nome: 'placa mae modelo 2', preco: 56.99, imagem: '../../assets/placamaez80.svg.svg' },
     { nome: 'placa de video', preco: 56.99, imagem: '../../assets/hd2tb.svg.svg' },
     { nome: 'rtx3060', preco: 56.99, imagem: '../../assets/rtx3060.svg.svg' },
     { nome: 'rtx4060', preco: 56.99, imagem: '../../assets/rtx4060.svg.svg' }
