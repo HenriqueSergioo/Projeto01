@@ -6,15 +6,16 @@ import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
 import { ConfirmOrderComponent } from './confirm-order/confirm-order.component';
 import { ConfirmPaymentComponent } from './confirm-payment/confirm-payment.component';
+import { HardwaresComponent } from './pages/hardwares/hardwares.component';
 
 const routes: Routes = [
 
   {path: '', component: HomeComponent},
-  {path: 'login', component: LoginComponent},
+  {path: 'menu', component: LoginComponent},
   {path: 'about', component: AboutComponent},
   {path: 'menu', component: MenuComponent},
-  {path: 'confirm-order', component: ConfirmOrderComponent},
-  {path: 'confirm-payment', component: ConfirmPaymentComponent},
+  {path: 'hardware', component: HardwaresComponent},
+  {path: '', component: ConfirmPaymentComponent},
 
 ];
 
