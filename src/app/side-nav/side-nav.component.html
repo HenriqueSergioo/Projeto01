@@ -1,19 +1,26 @@
+<div class="container">
+  <!-- Botão para esconder/mostrar a barra lateral -->
+  <button class="toggle-btn" (click)="toggleNav()">
+    ☰
+  </button>
 
-<div class="side-nav">
-  <ul>
-    <img src="../../assets/logopchouse2-removebg-preview.png" alt="LogoPC" width="140px">
-    <li><a routerLink="/monte-seu-pc">Monte seu Pc
-      <img src="../../assets/ferramenta.png" width="13px ">
-    </a></li>
-    <li><a routerLink="/hardware">Hardware
-      <img src="../../assets/hardware.png" width="13px">
-    </a></li>
-    <li><a routerLink="/pcs-gamers">PC's Gamers
-      <img src="../../assets/pc.png" width="13px">
+  <!-- Barra lateral -->
+  <div class="side-nav" [class.hidden]="isNavHidden">
+    <ul>
+      <div class="logo">
+        <a href="#">
+          <img src="../../assets/logopchouse2-removebg-preview.png" alt="LogoPC" width="150px">
+        </a>
+      </div>
+      <li><a routerLink="/monte-seu-pc"> Monte seu Pc </a></li>
+      <li><a routerLink="/hardware"> Hardware </a></li>
+      <li><a routerLink="/pcs-gamers"> PC's Gamers </a></li>
+      <li><a routerLink="/orcamento"> Faça seu orçamento </a></li>
+    </ul>
+  </div>
 
-    </a></li>
-    <li><a routerLink="/orcamento">Faça seu orçamento
-      <img src="../../assets/dolar.png" width="12px">
-    </a></li>
-  </ul>
+  <!-- Conteúdo principal -->
+  <div class="main-content" [class.nav-hidden]="isNavHidden">
+    <router-outlet></router-outlet>
+  </div>
 </div>
