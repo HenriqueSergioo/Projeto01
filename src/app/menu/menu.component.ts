@@ -21,8 +21,7 @@ export class MenuComponent {
     { nome: 'SSD 500GB', preco: 325.99, imagem: '../../assets/ssdkingston.jpg' },
     { nome: 'Fonte 500W', preco: 309.59, imagem: '../../assets/fonte1.jpg' },
     { nome: 'Placa Mãe Z890', preco: 899.99, imagem: '../../assets/placamae2.jpg'},
-    { nome: 'Cooler Branco', preco: 690.70, imagem: '../../assets/coolerbranco.jpg' },
-    { nome: 'Cooler Preto', preco: 758.90, imagem: '../../assets/coolerpreto.jpg'}
+    { nome: 'Cooler Branco', preco: 690.70, imagem: '../../assets/coolerbranco.jpg' }
   ];
 
   carrinho: { nome: string; preco: number; quantidade: number }[] = [];
