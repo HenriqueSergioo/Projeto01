@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
-import { MenuComponent } from './menu/menu.component';
+
 import { ConfirmOrderComponent } from './confirm-order/confirm-order.component';
 import { ConfirmPaymentComponent } from './confirm-payment/confirm-payment.component';
 import { HardwaresComponent } from './pages/hardwares/hardwares.component';
 import { BuildpcComponent } from './pages/buildpc/buildpc.component';
 import { BudgetComponent } from './pages/budget/budget.component';
+import { PcGamerComponent } from './menu/pc-gamer/pc-gamer.component';
+import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
 
@@ -20,7 +22,8 @@ const routes: Routes = [
   {path: 'confirm-payment', component: ConfirmPaymentComponent},
   {path: 'hardware',component: HardwaresComponent},
   {path: 'build', component:BuildpcComponent},
-  {path: 'budget', component: BudgetComponent}
+  {path: 'budget', component: BudgetComponent},
+  {path: "pcgamer", component: PcGamerComponent}
 
 
 
