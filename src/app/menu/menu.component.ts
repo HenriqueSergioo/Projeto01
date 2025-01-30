@@ -9,21 +9,18 @@ import { Component } from '@angular/core';
 
 export class MenuComponent {
   produtos = [
-<<<<<<< HEAD
-    { nome: 'Cooler Branco', preco: 300.9, imagem: '../../assets/coolerbranco.svg.svg' },
-    { nome: 'Cooler Preto', preco: 400.9, imagem: '../../assets/coolerpreto.svg.svg' },
-    { nome: 'gabinete Branco', preco: 52.9, imagem: '../../assets/gabinetebranco.svg.svg' },
-    { nome: 'gabinete Preto', preco: 52.9, imagem: '../../assets/gabinetepreto.svg.svg' },
-    { nome: '', preco: 56.99, imagem: '' },
-    { nome: '', preco: 56.99, imagem: '' }
-=======
-    { nome: 'Placa de Vídeo GTX 3060', preco: 2899.99, imagem: '../../assets/placa-de-video.jpg' },
-    { nome: 'Processador Intel i7', preco: 1899.99, imagem: '../../assets/processador.jpg' },
-    { nome: 'Memória RAM 16GB', preco: 699.99, imagem: '../../assets/ram.jpg' },
-    { nome: 'SSD 512GB', preco: 399.99, imagem: '../../assets/ssd.jpg' },
-    { nome: 'Fonte 750W', preco: 499.99, imagem: '../../assets/fonte.jpg' },
-    { nome: 'Placa Mãe ASUS', preco: 899.99, imagem: '../../assets/placa-mae.jpg' }
->>>>>>> origin/devHenrique
+
+    { nome: 'Cooler Branco', preco: 300.9, imagem: '../../assets/coolerbranco.svg.svg', categoria: 'Placa Mãe' },
+    { nome: 'Cooler Preto', preco: 400.9, imagem: '../../assets/coolerpreto.svg.svg', categoria: 'Placa Mãe' },
+    { nome: 'Gabinete Branco', preco: 52.9, imagem: '../../assets/gabinetebranco.svg.svg', categoria: 'Placa Mãe' },
+    { nome: 'Gabinete Preto', preco: 52.9, imagem: '../../assets/gabinetepreto.svg.svg', categoria: 'Placa Mãe' },
+    { nome: 'Placa de Vídeo GTX 3060', preco: 2899.99, imagem: '../../assets/placa-de-video.jpg', categoria: 'Placa Mãe' },
+    { nome: 'Processador Intel i7', preco: 1899.99, imagem: '../../assets/processador.jpg', categoria: 'Placa Mãe' },
+    { nome: 'Memória RAM 16GB', preco: 699.99, imagem: '../../assets/ram.jpg', categoria: 'Placa Mãe' },
+    { nome: 'SSD 512GB', preco: 399.99, imagem: '../../assets/ssd.jpg', categoria: 'Placa Mãe' },
+    { nome: 'Fonte 750W', preco: 499.99, imagem: '../../assets/fonte.jpg', categoria: 'Placa Mãe' },
+    { nome: 'Placa Mãe ASUS', preco: 899.99, imagem: '../../assets/placa-mae.jpg', categoria: 'Placa Mãe' }
+
   ];
 
   carrinho: { nome: string; preco: number; quantidade: number }[] = [];

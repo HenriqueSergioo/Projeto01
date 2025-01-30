@@ -12,11 +12,12 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HardwaresComponent } from './pages/hardwares/hardwares.component';
-import { BudgetComponent } from './pages/budget/budget.component';
-import { BuildpcComponent } from './pages/buildpc/buildpc.component';
+import { BudgetComponent } from './pages/budget/budget.component'
 import { FormsModule } from '@angular/forms';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { PcGamerComponent } from './menu/pc-gamer/pc-gamer.component';
+import { BuildpcComponent } from './pages/buildpc/buildpc.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -43,6 +44,8 @@ import { PcGamerComponent } from './menu/pc-gamer/pc-gamer.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    CommonModule
+
   ],
  providers: [
     provideClientHydration()

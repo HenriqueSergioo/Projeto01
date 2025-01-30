@@ -11,7 +11,7 @@ describe('BuildpcComponent', () => {
       declarations: [BuildpcComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(BuildpcComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
