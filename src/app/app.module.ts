@@ -16,7 +16,7 @@ import { BudgetComponent } from './pages/budget/budget.component';
 import { BuildpcComponent } from './pages/buildpc/buildpc.component';
 import { FormsModule } from '@angular/forms';
 import { SideNavComponent } from './side-nav/side-nav.component';
-import { PcGamerComponent } from './menu/pc-gamer/pc-gamer/pc-gamer.component';
+import { PcGamerComponent } from './menu/pc-gamer/pc-gamer.component';
 
 
 
