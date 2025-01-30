@@ -3,10 +3,10 @@
   <div class="logo">
     <img src="../../assets/logopchouse2-removebg-preview.png" alt="Logo da Loja de Hardware">
   </div>
-
+  <button class="cart-icon" (click)="toggleCarrinho()">
     <i class="fas fa-shopping-cart"></i>
     <span *ngIf="carrinho.length > 0" class="cart-badge">{{ carrinho.length }}</span>
-
+  </button>
 </header>
 
 
