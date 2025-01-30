@@ -9,6 +9,7 @@ import { ConfirmPaymentComponent } from './confirm-payment/confirm-payment.compo
 import { HardwaresComponent } from './pages/hardwares/hardwares.component';
 import { BuildpcComponent } from './pages/buildpc/buildpc.component';
 import { BudgetComponent } from './pages/budget/budget.component';
+import { PcGamerComponent } from './menu/pc-gamer/pc-gamer/pc-gamer.component';
 
 const routes: Routes = [
 
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: 'confirm-payment', component: ConfirmPaymentComponent},
   {path: 'hardware',component: HardwaresComponent},
   {path: 'build', component:BuildpcComponent},
-  {path: 'budget', component: BudgetComponent}
+  {path: 'budget', component: BudgetComponent},
+  {path: "pcgamer", component: PcGamerComponent}
 
 
 
