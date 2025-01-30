@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HardwaresComponent {
 
-  carrinho: { nome: string; preco: number; quantidade: number }[] = [];
+  carrinho: { nome: string; preco: number; quantidade: number; categoria: string }[] = [];
 
   produtos :any [] =[
     { nome: 'Placa de Vídeo GTX 4060', preco: 1986.90, imagem: '../../assets/Placa4060.jpg' },
