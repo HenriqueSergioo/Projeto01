@@ -7,15 +7,19 @@ import { MenuComponent } from './menu/menu.component';
 import { ConfirmOrderComponent } from './confirm-order/confirm-order.component';
 import { ConfirmPaymentComponent } from './confirm-payment/confirm-payment.component';
 import { HardwaresComponent } from './pages/hardwares/hardwares.component';
+import { BuildpcComponent } from './pages/buildpc/buildpc.component';
 
 const routes: Routes = [
 
   {path: '', component: HomeComponent},
-  {path: 'menu', component: LoginComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'about', component: AboutComponent},
   {path: 'menu', component: MenuComponent},
-  {path: 'hardware', component: HardwaresComponent},
-  {path: '', component: ConfirmPaymentComponent},
+  {path: 'confirm-order', component: ConfirmOrderComponent},
+  {path: 'confirm-payment', component: ConfirmPaymentComponent},
+  {path: 'hardware',component: HardwaresComponent},
+  {path: 'build', component:BuildpcComponent},
+
 
 ];
 
