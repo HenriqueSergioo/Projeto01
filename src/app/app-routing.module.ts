@@ -8,6 +8,7 @@ import { ConfirmOrderComponent } from './confirm-order/confirm-order.component';
 import { ConfirmPaymentComponent } from './confirm-payment/confirm-payment.component';
 import { HardwaresComponent } from './pages/hardwares/hardwares.component';
 import { BuildpcComponent } from './pages/buildpc/buildpc.component';
+import { BudgetComponent } from './pages/budget/budget.component';
 
 const routes: Routes = [
 
@@ -19,6 +20,8 @@ const routes: Routes = [
   {path: 'confirm-payment', component: ConfirmPaymentComponent},
   {path: 'hardware',component: HardwaresComponent},
   {path: 'build', component:BuildpcComponent},
+  {path: 'budget', component: BudgetComponent}
+
 
 
 ];

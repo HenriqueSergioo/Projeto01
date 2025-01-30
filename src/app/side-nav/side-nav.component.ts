@@ -1,4 +1,6 @@
+import { BudgetComponent } from './../pages/budget/budget.component';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-side-nav',
