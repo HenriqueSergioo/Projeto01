@@ -18,6 +18,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { PcGamerComponent } from './menu/pc-gamer/pc-gamer.component';
 import { BuildpcComponent } from './pages/buildpc/buildpc.component';
 import { CommonModule } from '@angular/common';
+import { BuildResultComponent } from './build-result/build-result/build-result.component';
 
 
 
@@ -38,6 +39,7 @@ import { CommonModule } from '@angular/common';
     BuildpcComponent,
     SideNavComponent,
     PcGamerComponent,
+    BuildResultComponent,
   ],
 
   imports: [
