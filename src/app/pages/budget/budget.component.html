@@ -16,9 +16,19 @@
         <input type="email" id="email" name="email" required><br><br>
 
         <label for="mensagem">Qual sua forma de Pagamento:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+        <select id="payment-method" name="payment-method" required>
+          <option value="cartao-credito">Cartão de crédito</option>
+          <option value="cartao-debito">Cartão de débito</option>
+          <option value="pix">PIX</option>
+          <option value="boleto">Boleto Bancário</option>
+          <option value="paypal">PayPal</option>
+          <option value="dinheiro">Dinheiro na entrega</option>
+        </select>
+        <div class="confirm">
+          <a routerLink="/confirm-order"><button><a>Confirmar</a></button></a>
+        </div>
 
-        <input type="submit" value="Confirmar">
+
     </form>
 </body>
 </html>
